@@ -10,7 +10,7 @@ on:
       - ".stylelintrc.json"
       - ".github/workflows/eslint.yml"
   pull_request:
-    branches: [master]
+    branches: [main]
     paths:
       - "**.ts"
       - "**.js"

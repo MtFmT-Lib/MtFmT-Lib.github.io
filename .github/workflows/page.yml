@@ -2,7 +2,7 @@ name: Github pages
 
 on:
   push:
-    branches: [master]
+    branches: [main]
     paths:
       - ".github/workflows/page.yml"
       - "**.ts"
@@ -15,7 +15,7 @@ on:
       - "wasm/**"
       - "package.json"
   pull_request:
-    branches: [master]
+    branches: [main]
     paths:
         - ".github/workflows/page.yml"
         - "**.ts"
