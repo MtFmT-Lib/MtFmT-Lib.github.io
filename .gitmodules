@@ -1,0 +1,3 @@
+[submodule "wasm/mtfmt"]
+	path = wasm/mtfmt
+	url = https://github.com/MtFmT-Lib/mtfmt.git
