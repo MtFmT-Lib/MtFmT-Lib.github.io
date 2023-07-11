@@ -44,4 +44,4 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: wasm-artifact
-          path: /wasm/target/*
+          path: wasm/target/*
