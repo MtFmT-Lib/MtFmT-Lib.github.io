@@ -1,0 +1,45 @@
+name: Build WASM
+
+on:
+  push:
+    paths:
+      - "wasm/**.h"
+      - "wasm/**.c"
+      - "wasm/Makefile"
+      - "wasm/mtfmt/**"
+      - ".github/workflows/build-wasm.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "wasm/**.h"
+      - "wasm/**.c"
+      - "wasm/Makefile"
+      - "wasm/mtfmt/**"
+      - ".github/workflows/build-wasm.yml"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+
+jobs:
+  build-wasm:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      # WASM
+      - name: Setup emsdk
+        uses: mymindstorm/setup-emsdk@v12
+      - name: WASM build
+        working-directory: "./wasm"
+        run: |
+          emmake make
+      # 打包
+      - name: Upload artifact
+        if: github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@v3
+        with:
+          name: wasm-artifact
+          path: /wasm/target/*
