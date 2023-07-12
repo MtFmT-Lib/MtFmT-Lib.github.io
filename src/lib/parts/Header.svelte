@@ -24,7 +24,7 @@
         { addr: '/faq', name: 'FAQ' },
         { addr: '/doc', name: 'DOC' },
         {
-            addr: 'https://mtfmt-lib.github.io/mtfmt/doxygen/html/',
+            addr: 'https://mtfmt.cc/mtfmt/html/',
             name: 'CODE DOC',
         },
         { addr: 'https://github.com/MtFmT-Lib/mtfmt', name: 'GITHUB' },

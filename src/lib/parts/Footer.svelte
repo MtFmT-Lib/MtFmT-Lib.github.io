@@ -22,9 +22,7 @@
                     <li><a href="./start">QUICK START</a></li>
                     <li><a href="./doc">API DOCUMENT</a></li>
                     <li>
-                        <a
-                            href="https://mtfmt-lib.github.io/mtfmt/doxygen/html/"
-                        >
+                        <a href="https://mtfmt.cc/mtfmt/html/">
                             <span>SOURCES DOCUMENT</span>
                         </a>
                     </li>
