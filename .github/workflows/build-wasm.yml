@@ -6,7 +6,7 @@ on:
       - "wasm/**.h"
       - "wasm/**.c"
       - "wasm/Makefile"
-      - "wasm/mtfmt/**"
+      - "wasm/mtfmt"
       - ".github/workflows/build-wasm.yml"
   pull_request:
     branches: [main]
@@ -14,7 +14,7 @@ on:
       - "wasm/**.h"
       - "wasm/**.c"
       - "wasm/Makefile"
-      - "wasm/mtfmt/**"
+      - "wasm/mtfmt"
       - ".github/workflows/build-wasm.yml"
   workflow_dispatch:
     inputs:
