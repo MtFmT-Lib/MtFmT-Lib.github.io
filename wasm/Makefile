@@ -24,7 +24,7 @@ BUILD_DIR = build
 OUTPUT_DIR = target
 
 # 导出函数的文件
-EXPORT_FILE = export.mk
+EXPORT_FILE = mtfmt/support/WebAssemblyExport.mk
 
 # C sources
 C_SOURCES =  \
